@@ -81,10 +81,10 @@ cc_defaults {
     shared_libs: ["libz"],
     target: {
         android_x86: {
-            cflags: ["-DPNG_INTEL_SSE_OPT=1"],
+            cflags: ["-DPNG_INTEL_SSE_OPT=1", "-O3"],
         },
         android_x86_64: {
-            cflags: ["-DPNG_INTEL_SSE_OPT=1"],
+            cflags: ["-DPNG_INTEL_SSE_OPT=1", "-O3"],
         },
     },
     export_include_dirs: ["."],
